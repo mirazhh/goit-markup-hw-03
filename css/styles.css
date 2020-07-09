@@ -1,0 +1,240 @@
+/*Common styles*/
+
+/* Raleway bold 700
+   Roboto Regular 400
+   Roboto Medium 500
+   Roboto Bold 700
+   Roboto Black 900*/
+
+   :root {
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    --dark-grey-text-color: #212121;
+    --light-grey-text-color:#757575;
+    --accent-blue-color:#2196F3;
+    --dark-theme-text-color: #FFFFFF;
+    --logo-black-color:#000000;
+    --main-background-color:#E5E5E5;
+
+}
+
+body {
+    width: 1600px;
+    height: 2924px;
+    background-color: var(--main-background-color) /*#E5E5E5*/;
+    font-family: var(--main-font) /*'Roboto', Sans-serif*/;
+    color: var(--dark-grey-text-color) /*#212121*/;
+    font-size: 14px;
+
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+/*Header css*/
+
+.web-studio-logo {
+    font-family: var(--secondary-font) /*"Raleway", sans-serif*/;
+    font-weight: 700; /*bold*/
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0,03em;
+}
+
+.web-logo-part {
+    color: var(--accent-blue-color) /*#2196F3*/;
+}
+
+.studio-logo-part {
+    color: var(--logo-black-color) /*#000000*/;
+}
+
+.web-studio-item-link {
+    color: var(--dark-grey-text-color) /*#212121*/;
+}
+
+.web-studio-item-link,
+.contacts-menu-item-link {
+    font-weight: 500;
+    font-style: normal;/*deletes automatic italic of link*/
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0,02em;
+}
+
+.contacts-menu-item-link {
+    color: var(--light-grey-text-color) /*#757575*/;
+}
+
+.web-studio-item-link:hover,
+.web-studio-item-link:focus,
+.contacts-menu-item-link:hover,
+.contacts-menu-item-link:focus {
+    color: var(--accent-blue-color); /*#2196F3*/
+}
+
+.web-studio-item-link-active {
+    color: var(--accent-blue-color); /*#2196F3*/
+}
+
+/*.contacts-menu-item-link-active {
+    color: var(--accent-blue-color)
+}*/
+
+/*Index.html Studio css*/
+
+.hero-section-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /*text-align: center;*/
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--dark-theme-text-color) /*#FFFFFF*/;
+}
+
+.hero-section-button {
+   font-weight: 700;/*bold*/
+   font-size: 16px;
+   line-height: 1.88;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.06em;
+}
+
+.hero-section-button:hover,
+.hero-section-button:focus {
+    background-color: var(--accent-blue-color) /*#2196F3*/;
+    color: var(--dark-theme-text-color) /*#FFFFFF*/;
+}
+
+.our-strengths-item-title {
+   font-weight: 700;/*bold*/
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0,03em;
+   text-transform: uppercase;
+   /*color: var(--dark-grey-text-color) #212121*/
+}
+
+.our-strengths-item-info {
+   font-weight: 400;/*normal*/
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0,03em;
+   color: var(--light-grey-text-color) /*#757575*/;
+}
+
+.title 
+/*.what-we-do-section-title, 
+.our-team-section-title,
+.constant-clients-section-title*/ {
+   font-weight: 700;/*bold*/
+   font-size: 36px;
+   line-height: 1.17;
+   /*text-align: center;*/
+   letter-spacing: 0.03em;
+   /*color: var(--dark-grey-text-color) #212121*/
+}
+
+.what-we-do-item-title {
+    font-weight: 700;/*bold*/
+    font-size: 14px;
+    line-height: 1.14;
+    /*text-align: center;*/
+    letter-spacing: 0,03em;
+    text-transform: uppercase;
+    color: var(--dark-theme-text-color) /*#FFFFFF*/;
+}
+
+.our-team-member-name,
+.our-team-member-profession {
+    font-size: 16px;
+    line-height: 1.19;
+    /*text-align: center;*/
+    letter-spacing: 0.03em;
+}
+
+.our-team-member-name {
+    font-weight: 500;
+     /*color: var(--dark-grey-text-color) #212121*/
+}
+
+.our-team-member-profession {
+    font-weight: 400; /*normal*/
+    color: var(--light-grey-text-color) /*#757575*/;
+}
+
+/*Portfolio css*/
+
+.web-studio-item-link-active {
+    color: var(--accent-blue-color); /*#2196F3*/
+}
+
+/*.our-projects-item-link:hover {
+    background-color: var(--accent-blue-color);
+}*/
+
+.project-types-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    /*text-align: center;*/
+    letter-spacing: 0.03em;
+     /*color: var(--dark-grey-text-color) #212121*/
+}
+
+.project-types-button:hover,
+.project-types-button:focus {
+    background-color: var(--accent-blue-color) /*#2196F3*/;
+    color: var(--dark-theme-text-color) /*#FFFFFF*/;
+}
+
+.our-projects-item-title {
+    font-weight: 700;/*bold*/
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--dark-grey-text-color) /*#212121*/;
+}
+
+.our-projects-item-type {
+    font-weight: 400; /*normal*/
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--light-grey-text-color) /*#757575*/;
+}
+
+/*Footer css*/
+
+.footer-contacts-item-link {
+    font-weight: 400; /*normal*/
+    font-style: normal;/*deletes automatic italic of link*/
+    font-size: 14px;
+    line-height: 1,71 px;
+    letter-spacing: 0.03em;
+}
+
+.footer-contacts-item-address {
+    color: var(--dark-theme-text-color) /*#FFFFFF*/;
+}
+
+.footer-contacts-item-requisites {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.join-us-text {
+    font-weight: 700; /*bold*/
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--dark-theme-text-color) /*#FFFFFF*/;
+}
