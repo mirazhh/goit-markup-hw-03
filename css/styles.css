@@ -6,6 +6,18 @@
    Roboto Bold 700
    Roboto Black 900*/
 
+html {
+    box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
    :root {
     --main-font: "Roboto", sans-serif;
     --secondary-font: "Raleway", sans-serif;
@@ -25,7 +37,7 @@ body {
     font-family: var(--main-font) /*'Roboto', Sans-serif*/;
     color: var(--dark-grey-text-color) /*#212121*/;
     font-size: 14px;
-
+    border: 1px solid red;
 }
 
 .link {
@@ -38,12 +50,37 @@ body {
 
 /*Header css*/
 
+.header-box {
+    height: 80px;
+    background-color:cyan;
+}
+
+.header-box,
+.web-studio-menu,
+.contacts-menu {
+    display: flex; 
+    justify-content: center;
+}
+
 .web-studio-logo {
     font-family: var(--secondary-font) /*"Raleway", sans-serif*/;
     font-weight: 700; /*bold*/
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0,03em;
+}
+
+.web-studio-logo {
+    margin-right: 85px; 
+    margin-bottom: 25px;
+}
+
+.web-studio-item /*not last child*/ {
+    margin-right: 50px;
+}
+
+.contacts-menu-item /*not last child*/ {
+    margin-right: 50px;
 }
 
 .web-logo-part {
@@ -57,6 +94,12 @@ body {
 .web-studio-item-link {
     color: var(--dark-grey-text-color) /*#212121*/;
 }
+
+/*.web-studio-item,
+.contacts-menu-item {
+    display: flex;
+}*/
+
 
 .web-studio-item-link,
 .contacts-menu-item-link {
@@ -86,16 +129,33 @@ body {
     color: var(--accent-blue-color)
 }*/
 
+
 /*Index.html Studio css*/
+
+/*Hero section*/
+
+.hero-section {
+    height: 600px;
+    padding-top: 200px;
+    background-color: darkkhaki;
+}
 
 .hero-section-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    /*text-align: center;*/
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--dark-theme-text-color) /*#FFFFFF*/;
+}
+
+.hero-section-title {
+    margin-bottom: 30px;
+}
+
+.hero-section-button {
+    margin-bottom: 200px;
 }
 
 .hero-section-button {
@@ -112,6 +172,14 @@ body {
 .hero-section-button:focus {
     background-color: var(--accent-blue-color) /*#2196F3*/;
     color: var(--dark-theme-text-color) /*#FFFFFF*/;
+}
+
+/*Our strengths section*/
+
+
+.our-strengths-list {
+    display: flex; 
+    justify-content: center; 
 }
 
 .our-strengths-item-title {
@@ -131,6 +199,10 @@ body {
    color: var(--light-grey-text-color) /*#757575*/;
 }
 
+
+/*What we do section*/
+
+
 .title 
 /*.what-we-do-section-title, 
 .our-team-section-title,
@@ -138,26 +210,55 @@ body {
    font-weight: 700;/*bold*/
    font-size: 36px;
    line-height: 1.17;
-   /*text-align: center;*/
+   text-align: center;
    letter-spacing: 0.03em;
    /*color: var(--dark-grey-text-color) #212121*/
+}
+
+
+.what-we-do-list {
+    display: flex; 
+    justify-content: center;  
 }
 
 .what-we-do-item-title {
     font-weight: 700;/*bold*/
     font-size: 14px;
     line-height: 1.14;
-    /*text-align: center;*/
+    text-align: center;
     letter-spacing: 0,03em;
     text-transform: uppercase;
     color: var(--dark-theme-text-color) /*#FFFFFF*/;
+}
+
+.social-network-links-list {
+    display: flex; 
+    justify-content: center; 
+}
+
+
+/*Our team section*/
+
+
+.our-team-section {
+    height: 702px;
+    background-color: darkolivegreen;
+}
+
+.our-team-section-title {
+    padding-top: 94px;
+}
+
+.our-team-member {
+    padding-right: 30px;
+    padding-bottom: 94px;
 }
 
 .our-team-member-name,
 .our-team-member-profession {
     font-size: 16px;
     line-height: 1.19;
-    /*text-align: center;*/
+    text-align: center;
     letter-spacing: 0.03em;
 }
 
@@ -171,7 +272,32 @@ body {
     color: var(--light-grey-text-color) /*#757575*/;
 }
 
+.our-team-list {
+    display: flex; 
+    justify-content: center;  
+}
+
+.social-network-link-logo {
+    margin-right: 10px;
+    margin-bottom: 24px;
+}
+
+
+/*Constant clients section*/
+
+.constant-clients-section {
+    height: 370px;
+    background-color: darkorange;
+}
+
+.constant-clients-section-list {
+    display: flex; 
+    justify-content: center;  
+}
+
+
 /*Portfolio css*/
+
 
 .web-studio-item-link-active {
     color: var(--accent-blue-color); /*#2196F3*/
@@ -185,7 +311,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    /*text-align: center;*/
+    text-align: center;
     letter-spacing: 0.03em;
      /*color: var(--dark-grey-text-color) #212121*/
 }
@@ -194,6 +320,11 @@ body {
 .project-types-button:focus {
     background-color: var(--accent-blue-color) /*#2196F3*/;
     color: var(--dark-theme-text-color) /*#FFFFFF*/;
+}
+
+.project-types-list {
+    display: flex; 
+    justify-content: center; 
 }
 
 .our-projects-item-title {
@@ -213,6 +344,7 @@ body {
 }
 
 /*Footer css*/
+
 
 .footer-contacts-item-link {
     font-weight: 400; /*normal*/
