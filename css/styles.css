@@ -55,7 +55,7 @@ body {
 .container {
     width: 1200px;
     padding-left: 15px;
-    padding-right: 70px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -94,10 +94,6 @@ body {
     margin-right: 50px;
 }
 
-.header-box {
-    align-items: center;
-}
-
 .web-studio-item:last-child {
     margin-right: 331px;
 }
@@ -126,6 +122,13 @@ body {
     line-height: 1.14;
     letter-spacing: 0,02em;
 }
+
+
+/*.contacts-menu-wrapper {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}*/
 
 .contacts-menu-item-link {
     color: var(--light-grey-text-color) /*#757575*/;
