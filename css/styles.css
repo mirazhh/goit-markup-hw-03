@@ -10,13 +10,11 @@ html {
     box-sizing: border-box;
 }
 
-
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
-
 
    :root {
     --main-font: "Roboto", sans-serif;
@@ -34,8 +32,8 @@ html {
 }
 
 body {
-    width: 1600px;
-    /*height: 2924px;*/
+    /*width: 1600px;
+    height: 2924px;*/
     background-color: var(--main-background-color) /*#E5E5E5*/;
     font-family: var(--main-font) /*'Roboto', Sans-serif*/;
     color: var(--dark-grey-text-color) /*#212121*/;
@@ -44,6 +42,7 @@ body {
 
 .link {
     text-decoration: none;
+    display: block;
 }
 
 .list {
@@ -53,29 +52,61 @@ body {
 }
 
 .container {
-    width: 1200px;
+    width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
-/*Header css*/
+
+h1 {margin: 0;}
+
+
+/*.header-box*/
 
 .header-box {
-    /*height: 80px;*/
     background-color: var(--lightest-background-color);
-    padding-top: 24px; 
-    padding-bottom: 25px;
     border: 1px solid #ECECEC;
 }
 
-.header-box,
-.web-studio-menu,
-.contacts-menu {
-    display: flex; 
-    justify-content: center;
+.header-box-container {
+    display: flex;
     align-items: center;
-    /*align-content: center;*/
+    justify-content: space-between;
+}
+
+.header-box-navigation {
+    display: flex;
+    align-items: center;
+}
+.web-studio-menu {
+    display: flex; 
+    align-items: center;
+}
+
+.contacts-menu { 
+    display: flex; 
+    align-items: center;
+}
+
+.web-studio-logo {
+    padding-top: 24px; 
+    padding-bottom: 25px;
+    margin-right: 85px; 
+}
+
+.web-studio-item-link,
+.contacts-menu-item-link {
+    padding-top: 32px; 
+    padding-bottom: 32px;
+}
+
+.web-studio-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts-menu-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .web-studio-logo {
@@ -84,22 +115,6 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0,03em;
-}
-
-.web-studio-logo-main {
-    margin-right: 85px; 
-}
-
-.web-studio-item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.web-studio-item:last-child {
-    margin-right: 331px;
-}
-
-.contacts-menu-item:not(:last-child) {
-    margin-right: 50px;
 }
 
 .web-logo-part {
@@ -124,12 +139,6 @@ body {
 }
 
 
-/*.contacts-menu-wrapper {
-    margin-left: auto;
-    display: flex;
-    justify-content: space-between;
-}*/
-
 .contacts-menu-item-link {
     color: var(--light-grey-text-color) /*#757575*/;
 }
@@ -151,9 +160,9 @@ body {
 /*Hero section*/
 
 .hero-section {
+    background-color: var(--darker-background-color);
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--darker-background-color);
 }
 
 .hero-section-title {
@@ -199,9 +208,9 @@ body {
 }
 
 .our-strengths-section {
+    background-color: var(--lightest-background-color);
     padding-top: 94px;
     padding-bottom: 47px;
-    background-color: var(--lightest-background-color);
 }
 
 .our-strengths-list {
@@ -272,7 +281,8 @@ body {
 }
 
 .what-we-do-section-title {
-    margin-bottom: 27px;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .what-we-do-list {
@@ -281,23 +291,33 @@ body {
     align-items: center;
 }
 
-.what-we-do-photo {
-    margin-bottom: 27px;
-}
 
-.what-we-do-photo:not(:last-child) {
+.what-we-do-item:not(:last-child) {
     margin-right: 30px;
 }
 
+.what-we-do-pics {
+    margin-bottom: 0;
+}
 
 .what-we-do-item-title {
+    align-items: center;
+    justify-content: center;
+    padding-top: 27px;
+}
+
+.what-we-do-item-title {
+    width: 370px;
+    height: 70px;
     font-weight: 700;/*bold*/
     font-size: 14px;
     line-height: 1.14;
     text-align: center;
     letter-spacing: 0,03em;
     text-transform: uppercase;
-    /*color: var(--dark-theme-text-color);*/
+    color: var(--dark-theme-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    margin: 0;
 }
 
 .social-network-links-list {
@@ -321,6 +341,7 @@ body {
 }
 
 .our-team-section-title {
+    margin-top: 0;
     margin-bottom: 50px;
 }
 
@@ -460,14 +481,13 @@ body {
 }
 
 .our-projects-item:not(:nth-child(n+7)) {
-   margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .our-projects-item {
     border: 1px solid #EEEEEE;
-    padding-right: 24px;
     padding-bottom: 20px;
-    padding-left: 24px;
+
 }
 
 .our-projects-pics {
@@ -476,6 +496,8 @@ body {
 
 .our-projects-item-title {
     margin-bottom: 4px;
+    padding-right: 24px;
+    padding-left: 24px;
 }
 
 
@@ -493,21 +515,23 @@ body {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--light-grey-text-color) /*#757575*/;
+    padding-right: 24px;
+    padding-left: 24px;
 }
 
 /*Footer css*/
 
-
 .footer-box {
+    background-color: var(--background-footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-box-container {
     display: flex; 
     justify-content: space-between;
     align-items: center;
-}
 
-.footer-box {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--background-footer-color);
 }
 
 .footer-contacts-box {

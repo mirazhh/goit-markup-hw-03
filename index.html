@@ -10,29 +10,26 @@
   </head>
   <body>
     
-    <header" >
-    <!--WebStudio main information-->
-    <div class="header-box">
-      <div class="web-studio-logo-main">
-      <a class="web-studio-logo link" href="./index.html">
-        <span class="web-logo-part">Web</span> 
-        <span class="studio-logo-part">Studio</span>
-      </a>
-      </div>
-      <div class="web-studio-menu-box">
-      <ul class="web-studio-menu list">
-        <li class="web-studio-item">
-          <a class="web-studio-item-link web-studio-item-link-active link"  href="./index.html">Студия</a>
-        </li>
-        <li class="web-studio-item">
-          <a class="web-studio-item-link link" href="./portfolio.html">Портфолио</a>
-        </li>
-        <li class="web-studio-item">
-          <a class="web-studio-item-link link" href="">Контакты</a>
-        </li>
-      </ul>
-      </div>
-      <div class="contacts-menu-wrapper">
+    <header class="header-box">
+      <!--WebStudio main information-->
+      <div class="header-box-container container">
+        <nav class="header-box-navigation">
+          <a class="web-studio-logo link" href="./index.html">
+            <span class="web-logo-part">Web</span> 
+            <span class="studio-logo-part">Studio</span>
+          </a>
+          <ul class="web-studio-menu list">
+            <li class="web-studio-item">
+              <a class="web-studio-item-link web-studio-item-link-active link"  href="./index.html">Студия</a>
+            </li>
+            <li class="web-studio-item">
+              <a class="web-studio-item-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="web-studio-item">
+              <a class="web-studio-item-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
         <address class="contacts">
             <ul class="contacts-menu list">
               <li class="contacts-menu-item">
@@ -42,8 +39,7 @@
                 <a class="contacts-menu-item-link link"   href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
-          </address>
-      </div>
+        </address>
       </div>
     </header>
     
@@ -52,6 +48,7 @@
       <!--Hero section-->
 
       <section class="hero-section">
+        <div class="hero-section-container container">
         <h1 class="hero-section-title">
           Эффективные решения
           <br />
@@ -61,12 +58,13 @@
           <button class="hero-section-button" type="button">Заказать услугу
           </button>
         </div>
+      </div>
       </section>
 
       <!--Our strengths section-->
 
-      <section>
-        <div class="our-strengths-section">
+      <section class="our-strengths-section">
+        <div class="our-strengths-section-container container">
           <h2 class="our-strengths-section-title is-hidden" hidden>Наши сильные стороны</h2>
             <ul class="our-strengths-list list">
               <li class="our-strengths-item">
@@ -80,7 +78,7 @@
                 <p class="our-strengths-item-info">
                  Идейные соображения, а также начало повседневной работы по
                  формированию позиции.
-                 </p>
+                </p>
               </li>
               <li class="our-strengths-item">
                 <div class="our-strengths-section-pics">
@@ -127,41 +125,41 @@
 
       <!--What we do section-->
 
-      <section>
-        <div class="what-we-do-section">
+      <section class="what-we-do-section">
+        <div class="what-we-do-section-container container">
           <h2 class="what-we-do-section-title title">Чем мы занимаемся</h2>
             <ul class="what-we-do-list list">
             <li class="what-we-do-item">
-                <figure class="what-we-do-photo">
+                <div class="what-we-do-pics">  
                   <img 
                     src="./images/What_we_do_pics/Action-1.jpg"
                     alt="Фото создания десктопных приложений"
                     width="370"
                     height="224"
                     />
-                </figure>
+                  </div>
                 <h3 class="what-we-do-item-title">Десктопные приложения</h3>
             </li>
             <li class="what-we-do-item">
-              <figure class="what-we-do-photo">
+              <div class="what-we-do-pics">  
                 <img
                   src="./images/What_we_do_pics/Action-2.jpg"
                   alt="Фото создания мобильных приложений"
                   width="370"
                   height="224"
                 />
-              </figure>
+                <div>
               <h3 class="what-we-do-item-title">Мобильные приложения</h3>
             </li>
             <li class="what-we-do-item">
-              <figure class="what-we-do-photo">
+              <div class="what-we-do-pics">
                 <img
-                src="./images/What_we_do_pics/Action-3.jpg"
-                alt="Фото создания дизайнерских решений"
-                width="370"
-                height="224"
-               />
-              </figure>
+                  src="./images/What_we_do_pics/Action-3.jpg"
+                  alt="Фото создания дизайнерских решений"
+                  width="370"
+                  height="224"
+                 />
+                 </div>
               <h3 class="what-we-do-item-title">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -171,6 +169,7 @@
       <!--Our team section-->
 
       <section class="our-team-section">
+        <div class="our-team-section-container container">
         <h2 class="our-team-section-title title">Наша команда</h2>
         <ul class="our-team-list list">
           <li class="our-team-member">
@@ -361,12 +360,13 @@
             </ul>
           </li>
         </ul>
+      </div>
       </section>
 
       <!--Constant clients section-->
 
-      <section>
-        <div class="constant-clients-section">
+      <section class="contant-clients-section">
+        <div class="constant-clients-section-container container">
         <h2 class="constant-clients-section-title title">Постоянные клиенты</h2>
         <ul class="constant-clients-section-list list">
           <li class="constant-clients-section-item">
@@ -434,10 +434,10 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer-box">
       
       <!--Footer contacts section-->
-      <div class="footer-box">
+      <div class="footer-box-container container">
         <div class="footer-box-contacts">
           <div class="web-studio-logo-wrapper">
             <a class="web-studio-logo link" href="./index.html">
@@ -508,5 +508,6 @@
         </div>
       </div> 
     </footer>
+
   </body>
 </html>
