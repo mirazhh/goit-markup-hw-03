@@ -68,6 +68,7 @@ img {
 /*.header-box*/
 
 .header-box {
+    
     background-color: var(--lightest-background-color);
     border: 1px solid #ECECEC;
 }
@@ -93,13 +94,12 @@ img {
 }
 
 .web-studio-header-logo {
-    padding-top: 24px; 
-    padding-bottom: 25px;
+   /*padding-top: 24px; 
+    padding-bottom: 25px;*/
     margin-right: 85px; 
 }
 
-.web-studio-item-link,
-.contacts-menu-item-link {
+.web-studio-item-link {
     padding-top: 32px; 
     padding-bottom: 32px;
 }
@@ -163,7 +163,10 @@ img {
 /*Hero section*/
 
 .hero-section {
-    background-color: var(--darker-background-color);
+    /*background-color: var(--darker-background-color);*/
+    background-image: url(../images/Header/Header-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     padding-top: 200px;
     padding-bottom: 200px;
 }
