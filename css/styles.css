@@ -61,6 +61,8 @@ body {
 
 h1, h2, h3, h4 {margin: 0;}
 
+p, b {margin: 0;}
+
 img {
     display: block;
 }
@@ -369,6 +371,11 @@ img {
     color: var(--light-grey-text-color) /*#757575*/;
 }
 
+.our-team-member-profession:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+
 .our-team-list {
     display: flex; 
     justify-content: center;
@@ -458,6 +465,7 @@ img {
 
 .project-types-list {
     display: flex; 
+    flex-grow: 0;
     justify-content: center; 
 }
 
@@ -491,12 +499,14 @@ img {
 .our-projects-list {
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 0;
     justify-content: center; 
 }
 
 .our-projects-item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
+
 
 .our-projects-item:not(:nth-child(n+7)) {
     margin-bottom: 30px;
