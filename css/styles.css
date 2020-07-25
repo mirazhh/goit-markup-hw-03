@@ -63,7 +63,7 @@ h1, h2, h3, h4 {margin: 0;}
 
 p, b {margin: 0;}
 
-img {
+img, p, b {
     display: block;
 }
 
@@ -588,8 +588,12 @@ img {
 }
 
 .footer-social-network-link {
-    padding-top: 20px;
+    padding-top: 0;
     padding-bottom: 0;
+}
+
+.join-us-text {
+    margin-bottom: 20px;
 }
 
 .join-us-text {
