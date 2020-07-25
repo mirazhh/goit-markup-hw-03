@@ -176,7 +176,7 @@ img {
 .hero-section-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
+    line-height: 1.363;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -200,7 +200,7 @@ img {
 .hero-section-button {
    font-weight: 700;/*bold*/
    font-size: 16px;
-   line-height: 1.88;
+   line-height: 1.875;
    align-items: center;
    text-align: center;
    letter-spacing: 0.06em;
@@ -310,6 +310,7 @@ img {
     align-items: center;
     justify-content: center;
     padding-top: 27px;
+    padding-bottom: 27px;
 }
 
 .what-we-do-item-title {
@@ -371,10 +372,6 @@ img {
     color: var(--light-grey-text-color) /*#757575*/;
 }
 
-.our-team-member-profession:not(:last-child) {
-    margin-bottom: 16px;
-}
-
 
 .our-team-list {
     display: flex; 
@@ -404,8 +401,10 @@ img {
     margin-right: 10px;
 }
 
-.social-network-link:not(:last-child) {
-    margin-bottom: 24px;
+.social-network-link {
+    padding-top: 16px;
+    padding-bottom: 24px;
+   
 }
 
 /*Constant clients section*/
@@ -483,9 +482,10 @@ img {
 .project-types-button {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.63;
+    line-height: 1.625;
     text-align: center;
     letter-spacing: 0.03em;
+    border-radius: 4px;
      /*color: var(--dark-grey-text-color) #212121*/
 }
 
@@ -513,31 +513,24 @@ img {
 }
 
 .our-projects-information {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
 }
 
-.our-projects-item-photo {
-    margin-bottom: 20px;
-}
-
 .our-projects-item-title {
     margin-bottom: 4px;
-    padding-right: 24px;
-    padding-left: 24px;
 }
 
-.our-projects-item-type {
-    padding-right: 24px;
-    padding-left: 24px; 
-    padding-bottom: 20px;
-}
 
 .our-projects-item-title {
     font-weight: 700;/*bold*/
     font-size: 18px;
-    line-height: 2;
+    line-height: 2.00;
     letter-spacing: 0.06em;
     color: var(--dark-grey-text-color) /*#212121*/;
 }
@@ -545,7 +538,7 @@ img {
 .our-projects-item-type {
     font-weight: 400; /*normal*/
     font-size: 16px;
-    line-height: 1.88;
+    line-height: 1.875;
     letter-spacing: 0.03em;
     color: var(--light-grey-text-color) /*#757575*/;
 }
@@ -571,6 +564,7 @@ img {
 
 .web-studio-footer-logo {
     margin-bottom: 20px;
+    line-height: 1.192;
 }
 
 .footer-contacts-item:not(:last-child){
@@ -581,7 +575,7 @@ img {
     font-weight: 400; /*normal*/
     font-style: normal;/*deletes automatic italic of link*/
     font-size: 14px;
-    line-height: 1,71 px;
+    line-height: 1.714 px;
     letter-spacing: 0.03em;
 }
 
@@ -591,6 +585,11 @@ img {
 
 .footer-contacts-item-requisites {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-social-network-link {
+    padding-top: 20px;
+    padding-bottom: 0;
 }
 
 .join-us-text {
