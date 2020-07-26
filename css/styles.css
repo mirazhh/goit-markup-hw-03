@@ -96,8 +96,6 @@ img, p, b {
 }
 
 .web-studio-header-logo {
-   /*padding-top: 24px; 
-    padding-bottom: 25px;*/
     margin-right: 85px; 
 }
 
@@ -204,6 +202,7 @@ img, p, b {
    align-items: center;
    text-align: center;
    letter-spacing: 0.06em;
+   border: 0px;
    border-radius: 4px;
 }
 
@@ -485,6 +484,7 @@ img, p, b {
     line-height: 1.625;
     text-align: center;
     letter-spacing: 0.03em;
+    border: 0px;
     border-radius: 4px;
      /*color: var(--dark-grey-text-color) #212121*/
 }
@@ -513,10 +513,11 @@ img, p, b {
 }
 
 .our-projects-information {
-    padding-top: 20px;
+    padding-top: 19px;
     padding-right: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
     padding-left: 24px;
+    border: 0px;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
