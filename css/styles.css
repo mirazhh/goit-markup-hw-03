@@ -70,9 +70,9 @@ img, p, b {
 /*.header-box*/
 
 .header-box {
-    
     background-color: var(--lightest-background-color);
-    border: 1px solid #ECECEC;
+    border: 0px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-box-container {
