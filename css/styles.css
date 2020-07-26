@@ -575,7 +575,7 @@ img, p, b {
     font-weight: 400; /*normal*/
     font-style: normal;/*deletes automatic italic of link*/
     font-size: 14px;
-    line-height: 1.714 px;
+    line-height: 1.714;
     letter-spacing: 0.03em;
 }
 
