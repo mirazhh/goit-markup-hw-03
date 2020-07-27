@@ -388,6 +388,11 @@ img, p, b {
     align-content: center;
 }
 
+.our-team-member .social-network-links-list {
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+
 .social-network-link-logo {
     width: 44px;
     height: 44px;
@@ -400,11 +405,11 @@ img, p, b {
     margin-right: 10px;
 }
 
-.social-network-link {
+/*.social-network-link {
     padding-top: 16px;
     padding-bottom: 24px;
    
-}
+}*/
 
 /*Constant clients section*/
 
@@ -586,11 +591,6 @@ img, p, b {
 
 .footer-contacts-item-requisites {
     color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-social-network-link {
-    padding-top: 0;
-    padding-bottom: 0;
 }
 
 .join-us-text {
